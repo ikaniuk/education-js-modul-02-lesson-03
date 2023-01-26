@@ -228,4 +228,37 @@
 // Вставьте «Country» и «Reggae» в начало массива.
 
 
+// const genres = ['Jazz', 'Blues'];
+// console.log(genres);
+
+// genres.push('Рок-н-ролл');
+// console.log(genres);
+// console.log(genres[0]);
+// const lastElemt = genres.length - 1;
+// console.log(genres[lastElemt]);
+
+// const firstElement = genres.shift();
+// console.log(firstElement);
+// console.log(genres);
+// genres.unshift('Country', 'Reggae');
+// console.log(genres);
+
+
+// ===========================================================================
+// Example 2 - Массивы и строки
+// Напиши скрипт для вычисления площади прямоугольника со сторонами, значения которых 
+// хранятся в переменной values в виде строки.Значения гарантированно разделены пробелом.
+
+const values = '8 11';
+const sides = values.split(' ');
+console.log(sides);
+console.log('S = a * b');
+const a = sides[0];
+const b = sides[1];
+
+const area = a * b;
+console.log(area);
+
+
+
 
