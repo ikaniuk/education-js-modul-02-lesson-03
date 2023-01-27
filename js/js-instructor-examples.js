@@ -277,9 +277,9 @@
 
 // ==============================================
 // Example 4 - Массивы и циклы
-// Напиши скрипт который выводит в консоль имя и телефонный номер пользователя. 
+// Напиши скрипт который выводит в консоль имя и телефонный номер пользователя.
 // В переменных names и phones хранятся строки имен и телефонных номеров, разделенные запятыми.
-// Порядковый номер имен и телефонов в строках указывают на соответствие.Количество имен и 
+// Порядковый номер имен и телефонов в строках указывают на соответствие.Количество имен и
 // телефонов гарантированно одинаковое.
 
 // const names = 'Jacob,William,Solomon,Artemis';
@@ -295,4 +295,100 @@
 //     // console.log(`${i + 1}: ${namesArr[i]}`);
 //     // console.log(`${i + 1}: ${phonesArr[i]}`);
 //     console.log(namesArr[i], phonesArr[i]);
-// } 
+// }
+
+
+// ===== exercise 5 =====
+// Example 5 - Массивы и строки
+// Напиши скрипт который выводит в консоль все слова строки
+// кроме первого и последнего.
+// Результирующая строка не должна начинаться или заканчиваться пробельным символом.
+// Скрипт должен работать для любой строки.
+
+// const string = 'Welcome to the future';
+// console.log(string);
+
+// const newArr = string.split(' ');
+// // console.log(newArr);
+// newArr.shift();
+// newArr.pop();
+// // console.log(newArr);
+// console.log(newArr.join(' '))
+
+
+// // ==========================================================
+// Example 6 - Массивы и строки
+// Напиши скрипт который «разворачивает» строку(обратный порядок букв)
+// и выводит ее в консоль.
+
+// const string = 'Welcome to the future';
+// console.log(string);
+
+// const strArr = string.split('');
+// // console.log(strArr);
+
+// let reversedString = '';
+
+// for (let i = strArr.length - 1; i >= 0; i -= 1){
+//     // console.log(strArr[i]);
+//     reversedString += strArr[i];
+// }
+
+// console.log(reversedString);
+
+// -------------------------------------------------------------------
+
+// const string = 'Welcome to the future';
+// // const strArr = string.split('');
+// // const reversedLetters = strArr.reverse();
+// // const reversedString = reversedLetters.join('');
+
+// // console.log(strArr);
+// // console.log(reversedLetters);
+// // console.log(reversedString);
+
+// // ------------------------------------------------------------------------------
+
+// console.log(string.split('').reverse().join(''));
+
+
+// ==============================================================================
+// Example 7 - Сортировка массива с циклом
+// Напиши скрипт сортировки массива строк в алфавитном порядке по первой букве элемента.
+
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// const sortedArr = langs.sort();
+// console.log(sortedArr);
+
+
+// ========================================================
+// Example 8 - Поиск элемента
+// Напиши скрипт поиска самого маленького числа в массиве.
+// Код должен работать для любого массива чисел. Используй цикл для решения задачи.
+
+// const numbers = [2, 17, 94, 1, 23, 37];
+// let min = numbers[0];
+
+// for (const number of numbers) {
+//     // console.log(number);
+//     // console.log(`${number} < ${min}`, number < min);
+//     if (number < min) {
+//         min = number;
+//     }
+// }
+
+// console.log(numbers);
+// console.log('Самое маленькое число в масиве:', min);
+
+
+
+
+
+
+
+
+
+
+
+
+
