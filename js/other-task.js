@@ -78,4 +78,27 @@
 
 
 // -------------------Task-04--------------------------------------
+// Задание:
+// Дано массив. Создайте на основе значений этого массива два новых массива. 
+// В один массив поместите все четные значения, а во второй все нечетные.
+// Выведите на экран значения, которые вошли в первый массив и во второй массив.
+
+// const values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+// const honestNumber = [];
+// const oddNumber = [];
+
+// for (let i = 0; i < values.length; i += 1){
+//     // console.log(values[i]);
+
+//     if(values[i] % 2 === 0){
+//         console.log(`Четные числа`, values[i]);
+//         honestNumber.push(values[i]);
+//     } else{
+//         console.log(`Нчетные числа`, values[i]);
+//         oddNumber.push(values[i]);
+//     }
+// }
+
+// console.log(honestNumber);
+// console.log(oddNumber);
 
