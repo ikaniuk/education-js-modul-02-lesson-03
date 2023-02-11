@@ -183,7 +183,7 @@
 
 // -------------------------Task-08-------------------------------
 // Задание:
-// Дан массив целых чисел.Проверьте есть ли в нем одинаковые элементы. 
+// Дан массив целых чисел.Проверьте есть ли в нем одинаковые элементы.
 // Если есть выведите их на экран.
 
 // let values = [10, 20, 4, 6, 11, 9, 125, 10, 8, 0, 3, 5, 89, 12, 46, 77, 3];
@@ -191,7 +191,156 @@
 // for (let i = 0; i < values.length; i += 1){
 //     for (let j = i + 1; j < values.length; j += 1){
 //         if (values[i] === values[j]) {
-//             console.log(values[i])
+//             console.log(values[i]);
+//             break;
 //         }
-//     }   
+//     }
 // }
+
+
+// ------------------Array Mathods------------------------------------------------
+// -------------------Task-01---------------------------------------------
+// Задание:
+// Попросите у пользователя ввести название города. Удалите этот город из элементов массива.
+// Если города нет в массиве, сообщите об этом пользователю.
+// Выведите массив на экран после удаления элементов.
+
+// let cities = ["London", "Paris", "Berlin", "Rome", "Budapest", "Lisbon", "Madrid", "Amsterdam"];
+
+// const userCity = prompt('Введите название города');
+// const hasCity = cities.includes(userCity);
+// const indexOfUserCity = cities.indexOf(userCity);
+
+// if (hasCity) {
+//     cities.splice(indexOfUserCity, 1);
+//     console.log(cities);
+// } else if (!userCity) {
+//     console.log('отменено пользователем!')
+// } else {
+//     console.log('Такого города нет')
+// }
+
+
+
+
+// ====================================================================
+// -------------Найти и вывести простые числа до 100----------------
+// const maxNumber = 100;
+// i:
+// for (let i = 2; i <= maxNumber; i += 1){
+//     for (let j = 2; j < i; j += 1){
+//         if (i % j === 0) {
+//             continue i;
+//         }
+//     }
+//     console.log('Простое число', i);
+// }
+// =======================================================================
+
+
+// --------------Task-02---------------
+// Задание:
+// Напишите сценарий, который будет запрашивать у пользователя значения,
+// до тех пор, пока тот не введет значение stop
+// Все введенные значения, если они являются числом, должны быть добавлены в массив.
+// После того, как пользователь ввел значение стоп, посчитайте сумму всех значений,
+// которые находятся в массиве.
+
+// let userInput;
+// let sum = 0;
+
+// const values = [];
+
+// do {
+//     userInput = prompt('Введите значение');
+//     if (!isNaN(userInput)) {
+//         values.push(userInput);
+//     }
+// } while (userInput !== 'stop');
+
+// console.log(values);
+
+// for (const value of values) {
+//     sum += Number(value);
+// }
+
+// console.log('Сумма всех значений в массиве =',sum);
+
+
+// -------------------------Task-03-----------------------------
+// Задание:
+// Перепишите сценарий и воспользуйтесь одним из методов, изученных в уроке.Поменяйте код так,
+// чтобы сохранить его поведение.
+        
+// let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+// let oddValues = [];
+// let evenValues = [];
+// let oddValuesPosition = 0;
+// let evenValuesPosition = 0;
+
+// for (let value of values){
+//     if (value % 2 == 0){
+//         evenValues[evenValuesPosition] = value;
+//         evenValuesPosition++;
+//     }else{
+//         oddValues[oddValuesPosition] = value;
+//         oddValuesPosition++;
+//     }
+// }
+
+// console.log("Нечетные значения");
+// for (let oddVal of oddValues){
+//     console.log(oddVal);
+// }
+
+// console.log("Четные значения");
+// for (let evenVal of evenValues){
+//     console.log(evenVal);
+// }
+
+// -------------------------------------------------------------------
+
+// let values = [10, 20, 5, 7, 11, 8, 125, 4, 5, 7, 222, 1];
+
+// const oddValues = [];
+// const evenValues = [];
+
+// for (const value of values) {
+    
+//     if (value % 2 === 0) {
+//         evenValues.push(value);
+//     } else {
+//         oddValues.push(value);
+//     }
+// }
+
+// console.log('Четные');
+// for (const evenVal of evenValues) {
+//     console.log(evenVal)
+// }
+// console.log('не четные');
+// for (const oddVal of oddValues) {
+//     console.log(oddVal);
+// }
+
+
+// ---------------Task-04----------------------------
+// Задание:
+// Найдите все значения в массиве меньше 0 и удалите их.
+
+// let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+// // let indexOfMinNumber;
+
+// for (let i = 0; i < values.length; i += 1){
+//     if (values[i] < 0) {
+//         // indexOfMinNumber = [i];
+//         values.splice(i, 1);
+//     }
+// }
+
+// console.log(values);
+// for (const value of values) {
+//     console.log(value);
+// }
+
+
