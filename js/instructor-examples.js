@@ -91,3 +91,25 @@
 // const reversStr = string.split('').reverse().join('');
 
 // console.log(reversStr);
+
+
+// Example 7 - Сортування масиву із циклом
+// Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+
+// const sortArr = langs.sort();
+// console.log(sortArr);
+
+
+// Example 8 - Пошук елемента
+// Напиши скрипт пошуку найменшого числа у масиві.
+// Код повинен працювати для будь - якого масиву чисел.
+// Використовуй цикл для розв'язання задачі.
+// const numbers = [2, 17, 94, 1, 23, 37];
+// let min = numbers[0];
+// for (const number of numbers) {
+//     if (number < min) {
+//         min = number
+//     }
+// }
+// console.log(min); // 1
