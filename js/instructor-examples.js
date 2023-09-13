@@ -9,15 +9,13 @@
 // Вставте «Country» та «Reggae» на початок масиву.
 
 // const genres = ['Jazz', 'Blues'];
-// console.log(genres);
-
 // genres.push('Рок-н-рол');
 // console.log(genres);
 // console.log(genres[0]);
-// console.log(genres[genres.length - 1]);
-
-// const deletedElement = genres.splice(0, 1);
-// console.log(genres);
+// const lastElement = genres.length - 1;
+// console.log(genres[lastElement]);
+// const deletedFirstElemeny = genres.shift();
+// console.log(deletedFirstElemeny);
 // genres.unshift('Country', 'Reggae');
 // console.log(genres);
 
@@ -73,15 +71,10 @@
 // Скрипт повинен працювати для будь - якого рядка.
 
 // const string = 'Welcome to the future';
-// const words = string.split(' ');
-// let newString = '';
-
-// for (let i = 1; i < words.length - 1; i += 1){
-//     newString += words[i] + ' ';
-// }
-
-// newString = newString.slice(0, newString.length - 1);
-// console.log(newString);
+// const arr = string.split(' ');
+// const newStr = arr.slice(1, arr.length - 1).join(' ');
+// console.log(string);
+// console.log(newStr)
 
 
 // Example 6 - Масиви та рядки
